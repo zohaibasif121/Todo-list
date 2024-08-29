@@ -1,38 +1,118 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputBoxs {
+  width: 80%;
+  margin-inline: 10%;
+  margin-top: 1%;
+  background-color: greenyellow;
+  padding-inline: 2%;
+  padding-bottom: 2%;
+  border: 1px solid black;
+  border-radius: 10px;
+  
+}
+.inputBoxs h1{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:xx-large;
+  margin-bottom: 0;
+  /* font-weight: bold; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputBoxs header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+ input {
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-inline:2%;;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addBtn {
+  width: 15%;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: black;
+  color: greenyellow;
+  opacity: 0.5;
+  
 }
+.addBtn:hover{
+    cursor: pointer;
+    opacity: 1;
+  }
+  .addBtn:focus{
+    opacity: 1;
+  }
+  .List{
+    width: 80%;
+    margin-inline: 10%;
+    background-color: whitesmoke;
+    padding-inline: 2%;
+    padding-bottom: 2%;
+    margin-top:2% ;
+    border: 1px solid black;
+    border-radius: 10px;
+
+  }
+  .List h1{
+    font-size:xx-large;
+  }
+  .pendingTasks{
+    width: 90%;
+    margin: 4%;
+    padding: 2%;
+    /* padding-bottom: 2%; */
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pendingTasksBtn input{
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+  }
+  .pendingTasksBtn button {
+    /* background-color: blue; */
+    width: 70px;
+    height: 35px;
+    margin-inline: 2px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .pendingTasksBtn button:hover,:focus {
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .completedTasks{
+    width: 90%;
+    margin: 4%;
+    padding-inline: 2%;
+    /* padding-bottom: 2%; */
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .pendingTasksBtn{
+      display: flex;
+      flex-direction:column ;
+      align-items: center;
+      gap: 1;
+    }
+    .addBtn{
+      opacity: 1;
+    }
+  }

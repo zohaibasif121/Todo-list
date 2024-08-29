@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Header from './components/Header';
+import List from './components/List';
 
 function App() {
+  const[input,setinput]=useState("");
+
+  const[Task,setTask]=useState([
+    {
+      id:0,
+      task:`Learn React`,
+      check:false
+    },
+  ]);
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header Task={Task} set={setTask} input={input} setinput={setinput} />
+     <List Task={Task} set={setTask} input={input} setinput={setinput}/>
     </div>
   );
 }
