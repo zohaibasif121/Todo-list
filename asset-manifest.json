@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/zohaibasif121/Todo-list/static/css/main.1c897b1b.css",
+    "main.js": "/zohaibasif121/Todo-list/static/js/main.c2d8a328.js",
+    "static/js/453.e66df55e.chunk.js": "/zohaibasif121/Todo-list/static/js/453.e66df55e.chunk.js",
+    "index.html": "/zohaibasif121/Todo-list/index.html",
+    "main.1c897b1b.css.map": "/zohaibasif121/Todo-list/static/css/main.1c897b1b.css.map",
+    "main.c2d8a328.js.map": "/zohaibasif121/Todo-list/static/js/main.c2d8a328.js.map",
+    "453.e66df55e.chunk.js.map": "/zohaibasif121/Todo-list/static/js/453.e66df55e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c897b1b.css",
+    "static/js/main.c2d8a328.js"
+  ]
+}
