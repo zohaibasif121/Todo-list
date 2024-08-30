@@ -7,7 +7,7 @@
   width: 80%;
   margin-inline: 10%;
   margin-top: 1%;
-  background-color: greenyellow;
+  background-color: #508D4E;
   padding-inline: 2%;
   padding-bottom: 2%;
   border: 1px solid black;
@@ -56,7 +56,7 @@
   .List{
     width: 80%;
     margin-inline: 10%;
-    background-color: whitesmoke;
+    background-color: #D6EFD8;
     padding-inline: 2%;
     padding-bottom: 2%;
     /* margin-top:2% ; */
