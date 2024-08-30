@@ -79,9 +79,9 @@
     align-items: center;
     justify-content: space-between;
   }
-  #pending-task{
-    width: 50%;
-  }
+  /* #pending-task{ */
+    /* width: 50%; */
+  /* } */
   .pendingTasksBtn input{
     cursor: pointer;
     height: 20px;
@@ -111,13 +111,22 @@
   }
 
   @media screen and (max-width: 480px) {
-    /* .pendingTasksBtn{
+    .pendingTasksBtn{
       display: flex;
-      flex-direction:column ;
+      flex-direction:row ;
+      justify-content: space-between;
       align-items: center;
-      gap: 1;
-    } */
+      flex-wrap: wrap;
+    margin-top: 4%;
+    width: 100%;
+    }
     .addBtn{
       opacity: 1;
+    }
+    .pendingTasks{
+    width: 100%;
+    margin-inline: 0;  
+    flex-direction: column;
+    align-items: start;
     }
   }
