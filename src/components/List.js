@@ -29,7 +29,7 @@ function List(props) {
     <AnimatedList >
     <div key={obj.id} className='pendingTasks'>
       <div>
-    <h4 > {obj.task}</h4> 
+    <h4 id='pending-task'> {obj.task}</h4> 
     </div>
     <div className='pendingTasksBtn'> 
     <input type='checkbox' onClick={() => handleCheck(obj.id)} />
